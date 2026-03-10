@@ -54,18 +54,13 @@ dist/mac/joolloop: src/*.hx
 	@clang -O2 -std=c11 \
 		-I dist/mac/src \
 		-I $(HL_INC) \
-		-I $(HLSDL) \
-		-I /opt/homebrew/include \
-		-DGL_SILENCE_DEPRECATION \
-		$(HLSDL)/sdl.c $(HLSDL)/gl.c \
 		dist/mac/src/main.c \
 		-L $(HL_LIB) -lhl \
-		$(HL_LIB)/fmt.hdll $(HL_LIB)/ui.hdll $(HL_LIB)/uv.hdll \
-		-L /opt/homebrew/lib -lSDL2 -luv \
-		-framework OpenGL -framework CoreFoundation \
+		$(HL_LIB)/fmt.hdll $(HL_LIB)/ui.hdll $(HL_LIB)/uv.hdll $(HL_LIB)/sdl.hdll \
+		-L /opt/homebrew/lib -luv \
 		-rpath @executable_path \
 		-o dist/mac/joolloop
-	@echo "$(GREEN)Built dist/mac/joolloop$(NC)"
+	@rm -rf dist/mac/joolloop/src
 
 dist/web/game.js: src/*.hx
 	@haxe cfg/web.hxml
