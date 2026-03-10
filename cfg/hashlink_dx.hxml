@@ -1,5 +1,6 @@
 -cp src
 -lib heaps
+-lib hscript
 -main Main
--hl dist/game_dx.hl
+-hl dist/joolloop_dx.hl
 -lib hldx

@@ -1,4 +1,5 @@
 -cp src
 -lib heaps
+-lib hscript
 -main Main
 -js dist/web/game.js

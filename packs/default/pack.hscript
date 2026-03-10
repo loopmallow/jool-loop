@@ -1,0 +1,11 @@
+pack.name = "Default";
+pack.matchScore = 10;
+
+var colors = ["blue", "green", "pink", "purple", "red", "yellow"];
+var shapes = ["circle", "rhombus", "square", "squircle"];
+
+for (shape in shapes) {
+    for (color in colors) {
+        pack.addCandy("shapes/" + color + "_body_" + shape + ".png");
+    }
+}

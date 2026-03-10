@@ -1,6 +1,6 @@
 -cp src
 -lib heaps
 -lib hscript
--main Main
--hl dist/joolloop_sdl.hl
 -lib hlsdl
+-main Main
+-hl dist/mac/src/main.c
