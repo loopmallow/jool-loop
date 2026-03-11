@@ -1,6 +1,0 @@
--cp src
--lib heaps
--main Main
--hl dist/joolloop_dx12.hl
--lib hldx
--D dx12

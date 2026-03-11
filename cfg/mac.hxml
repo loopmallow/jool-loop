@@ -1,6 +1,0 @@
--cp src
--lib heaps
--lib hscript
--lib hlsdl
--main Main
--hl dist/mac/src/main.c

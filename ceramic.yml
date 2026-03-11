@@ -1,0 +1,12 @@
+app:
+    package: konsumer.jool-loop
+    name: jool-loop
+    displayName: jool-loop
+    author: David Konsumer
+    version: '1.0'
+
+    plugins:
+        - ui
+        - elements
+        - tilemap
+
